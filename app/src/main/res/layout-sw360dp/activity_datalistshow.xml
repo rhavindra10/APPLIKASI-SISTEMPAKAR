@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglayout"
+    tools:context=".datalist">
+
+    <TextView
+        android:id="@+id/namashow"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="119dp"
+        android:layout_marginLeft="119dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/box1"
+        android:gravity="center"
+        android:text="Nama Penyakit"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageshow"
+        android:layout_width="106dp"
+        android:layout_height="108dp"
+        android:layout_alignTop="@+id/namashow"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/box2"
+        app:srcCompat="@mipmap/datalist" />
+
+    <ScrollView
+        android:id="@+id/scrolket"
+        android:layout_width="match_parent"
+        android:layout_height="339dp"
+        android:layout_below="@+id/namashow"
+        android:layout_alignStart="@+id/imageshow"
+        android:layout_alignLeft="@+id/imageshow"
+        android:layout_alignEnd="@+id/namashow"
+        android:layout_alignRight="@+id/namashow"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="168dp"
+        android:background="@drawable/putihabuabu"
+        android:padding="10sp">
+
+        <TextView
+            android:id="@+id/keteranganshow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KETERANGAN PENYAKIT"
+            android:textSize="18sp" />
+    </ScrollView>
+
+</RelativeLayout>

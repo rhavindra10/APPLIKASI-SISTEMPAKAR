@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">sistempakarAUTIS</string>
+    <string name="title_activity_diagnosafrom">diagnosafrom</string>
+    <string name="diagnosahelp">Pada menu diagnosa pengguna dapat melakukan Diagnosa mengenai dekteksi dini autisme Ketika pengguna memilih menu Diagnosa,
+        maka akan masuk kedalam form seleksi dari gejala - gejala setiap penyakit yg diderta.
+      </string>
+    <string name="datalist"> Pada menu Informasi terdapat informasi mengenai penyakit serta keterangan dari penyakit tersebut </string>
+    <string name="tentang1"> Pakar deteksi dini autisme adalah aplikasi yang
+dapat membantu untuk menentukan penyakit dan solusi sesuai gejala gejala yang ada</string>
+
+
+    <string name="ASDautsime">"Autistic Spectrum Disorder (ASD) adalah gangguan perkembangan saraf otak yang mempengaruhi kemampuan berinteraksi, berkomunikasi, serta kelakuan. \n\n "  "Penanganan : \n" "-Ajak berkomunikasi dan berinteraksi dengan baik.\n"
+                            "-Tumbuhkan minat.\n"
+                            "-Jauhkan dari lingkungan yang bising.\n"
+                            "-Pelihara hewan." </string>
+
+    <!--;';-->
+    <string name="Skizofrenia">Skizofrenia adalah gangguan mental yang menyebabkan penderita mengalami halusinasi, delusi, kekacauan berpikir (kebingungan), serta perubahan perilaku.</string>
+
+    <string name="Asperger">Asperger adalah gangguan saraf otak yang mempengaruhi kemampuan berinteraksi dan berkomunikasi. Hampir sama dengan ASD dengan spektrum yang rendah.</string>
+
+    <string name="ADHS">"Attention Deficit Hyperactivity Disorder (ADHD) adalah kelainan yang membuat penderitanya kesulitan untuk memberikan perhatian dan fokus pada satu hal, umumnya akan diikuti aktifitas yang berlebihan.</string>
+
+    <string name="keterbelakangan">Retardasi mental adalah kondisi sebelum usia 18 tahun yang ditandai dengan rendahnya kecerdasan (biasanya nilai IQ-nya di bawah 70) dan sulit beradaptasi dengan kehidupan sehari-hari.</string>
+
+
+</resources>

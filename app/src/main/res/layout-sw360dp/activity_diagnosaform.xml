@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglayout"
+    app:counterEnabled="true"
+    app:counterMaxLength="20"
+    app:errorEnabled="true"
+    tools:context=".diagnosaform"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="449dp"
+        android:layout_marginTop="100dp"
+        android:background="#8DE0F3F2">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="165dp"
+            android:layout_height="44dp"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="78dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="-58dp"
+            android:background="#00FFFFFF"
+            android:gravity="center_horizontal|fill_horizontal|center_vertical"
+            android:text="Umur"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="168dp"
+            android:layout_height="59dp"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_marginStart="-1dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginTop="102dp"
+            android:layout_marginEnd="-2dp"
+            android:layout_marginRight="-2dp"
+            android:layout_marginBottom="-175dp"
+            android:background="#00FFFFFF"
+            android:gravity="center_horizontal|fill_horizontal|center_vertical"
+            android:text="Jenis Kelamin"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="167dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="26dp"
+            android:background="#00FFFFFF"
+            android:gravity="center_horizontal|fill_horizontal|center_vertical"
+            android:text="Nama             "
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/frmnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="-5dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:ems="10"
+            android:maxLength="40" />
+
+        <EditText
+            android:id="@+id/frmumur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="52dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+
+            android:ems="2"
+            android:freezesText="false"
+            android:gravity="center"
+            android:inputType="textShortMessage|number|textPersonName|text"
+            android:maxLength="2"
+            android:textIsSelectable="false" />
+
+        <RadioGroup
+            android:id="@+id/frmradiogroup"
+            android:layout_width="214dp"
+            android:layout_height="93dp"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_marginStart="170dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="-39dp">
+
+            <RadioButton
+                android:id="@+id/radiobtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/frmradiogroup"
+                android:layout_alignLeft="@+id/frmradiogroup"
+                android:layout_weight="1"
+                android:text="laki - laki" />
+
+            <RadioButton
+                android:id="@+id/radiobtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Perempuan" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnnext"
+            android:layout_width="243dp"
+            android:layout_height="58dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="81dp"
+            android:layout_marginLeft="81dp"
+            android:layout_marginEnd="87dp"
+            android:layout_marginRight="87dp"
+            android:layout_marginBottom="37dp"
+            android:background="@drawable/box1"
+            android:text="Next"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frmnama"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="7dp"
+            android:layout_toEndOf="@+id/frmumur"
+            android:layout_toRightOf="@+id/frmumur"
+            android:text="TAHUN"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tester"
+            android:layout_width="174dp"
+            android:layout_height="47dp"
+            android:layout_above="@+id/btnnext"
+            android:layout_alignStart="@+id/frmradiogroup"
+            android:layout_alignLeft="@+id/frmradiogroup"
+            android:layout_alignEnd="@+id/frmradiogroup"
+            android:layout_alignRight="@+id/frmradiogroup"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="15dp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

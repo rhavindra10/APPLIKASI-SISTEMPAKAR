@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglayout"
+    tools:context=".diagnosaformquest">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="78dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/box1"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="DIAGNOSA"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="24dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="#4AFAF7F7"
+            android:foregroundGravity="center_vertical|center">
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="#ABF5F1F1"
+                android:gravity="left"
+                android:onClick="selectitem"
+                android:padding="1dp"
+                android:text="Apakah ada kesulitan untuk mengungkapkan atau mengerti perasaan ?"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="#ABF5F1F1"
+                android:gravity="left"
+                android:onClick="selectitem"
+                android:text="Apakah ada kesulitan untuk fokus dan menyadari keadaan sekitarnya atau terlalu fokus pada hal yang dilakukannya?"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="#ABF5F1F1"
+                android:gravity="left"
+                android:onClick="selectitem"
+                android:padding="1dp"
+                android:text="Apakah ada kesulitan seperti tidak merespon saat ditegur maupun dipanggil?"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="#ABF5F1F1"
+                android:gravity="left"
+                android:onClick="selectitem"
+                android:padding="1dp"
+                android:text="Apakah ada kegiatan yang sering dilakukannya dengan tingkat intensitas yang tinggi?"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="#ABF5F1F1"
+                android:gravity="left"
+                android:onClick="selectitem"
+                android:padding="1dp"
+                android:text="Apakah ada kesulitan dalam hal menumbuhkan minat atau keinginan? "
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="#ABF5F1F1"
+                android:gravity="left"
+                android:onClick="selectitem"
+                android:padding="1dp"
+                android:text="Apakah ada perkataan yang sering diucapkan berulang kali?"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox7"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="#ABF5F1F1"
+                android:gravity="left"
+                android:onClick="selectitem"
+                android:padding="1dp"
+                android:text="Apakah ada kesulitan memberikan informasi dengan apa yang dirasa atau apa yang sedang dia inginkan?"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox8"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="#ABF5F1F1"
+                android:gravity="left"
+                android:onClick="selectitem"
+                android:padding="1dp"
+                android:text="Apakah ada kebiasaan sehari-hari yang selalu dilakukan jika tidak dilakukan akan merubah tingkahya menjadi agresif? "
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox9"
+                android:layout_width="wrap_content"
+                android:layout_height="80sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="#ABF5F1F1"
+                android:gravity="left"
+                android:onClick="selectitem"
+                android:padding="1dp"
+                android:text="Apakah ada indranya (pendengaran, penglihatan, penciuman, pengecap, dan peraba) yang lebih sensitif? "
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox10"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="#ABF5F1F1"
+                android:gravity="left"
+                android:onClick="selectitem"
+                android:padding="1dp"
+                android:text="Apakah ada kegiatan yang berlebihan hingga menarik perhatian serta mengganggu orang terdekat? "
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox11"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="#ABF5F1F1"
+                android:gravity="left"
+                android:onClick="selectitem"
+                android:padding="1dp"
+                android:text="Apakah ada kesulitan konsentrasi saat mempelajari sesuatu contohnya mengucap atau berjalan ?"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox12"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="#ABF5F1F1"
+                android:gravity="left"
+                android:onClick="selectitem"
+                android:padding="1dp"
+                android:text="Apakah sering ada sikap agresif pada sesuatu yang tidak dia suka? "
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/proses"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button1"
+                android:foregroundGravity="center_vertical|center|center_horizontal"
+                android:gravity="center|center_vertical"
+                android:text="PROSES"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="64dp"
+                tools:layout_editor_absoluteY="902dp" />
+
+        </RadioGroup>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
