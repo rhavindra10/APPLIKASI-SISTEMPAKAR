@@ -108,7 +108,13 @@ public class diagnosaquest extends AppCompatActivity {
                 startActivity(intent);
                 finish(); }
                 else{
-                    Toast.makeText(getApplicationContext(), "checkbox yg dipilih  harus lebih dari 3  ", Toast.LENGTH_LONG).show();
+//                    Toast.makeText(getApplicationContext(), "checkbox yg dipilih  harus lebih dari 3  ", Toast.LENGTH_LONG).show();
+                    globalClass.setPenyakit1("ASD gejala ringan");
+                    globalClass.setKeterangan("hanya gejala biasa");
+                    Intent intent = new Intent( diagnosaquest.this, diagnosahasil.class);
+
+                    startActivity(intent);
+                    finish();
                 }
 
 

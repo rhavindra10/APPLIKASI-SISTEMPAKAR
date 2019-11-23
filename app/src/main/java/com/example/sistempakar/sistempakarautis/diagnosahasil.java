@@ -45,6 +45,10 @@ Button btnmap;
 //        keterangan.setText("Keterangan \n\n" + globalClass.getKeterangan());
 //
 //        chckbox.setText("DIAGNOSA \n\n" + globalClass.getListdiagnosa());
+
+
+
+        //btn diagnosa lagi
         btndiagnosa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,6 +61,7 @@ Button btnmap;
 
             }
         });
+        //btn keluar dari diagnosa
         btnselesai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -72,7 +77,7 @@ Button btnmap;
             }
 
         });
-
+//munculuin link map
         btnmap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
