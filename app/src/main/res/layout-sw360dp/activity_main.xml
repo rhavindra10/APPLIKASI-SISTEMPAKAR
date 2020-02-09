@@ -66,10 +66,11 @@
         android:id="@+id/contrait"
         android:layout_width="0dp"
         android:layout_height="426dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
@@ -88,33 +89,10 @@
             android:scaleType="centerInside"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="116dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="center_horizontal"
-
-
-            android:shadowColor="#000000"
-            android:shadowDx="2"
-            android:shadowDy="2"
-            android:shadowRadius="2"
-            android:text="informasi"
-            android:textAllCaps="true"
-            android:textColor="#FAFFFFFF"
-            android:textColorLink="#00CA1212"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/search"
-            app:layout_constraintHorizontal_bias="0.529"
-            app:layout_constraintStart_toStartOf="@+id/search"
-            app:layout_constraintTop_toBottomOf="@+id/search" />
+            app:layout_constraintVertical_bias="0.004" />
 
         <TextView
             android:id="@+id/textView7"
@@ -138,40 +116,20 @@
             app:layout_constraintTop_toBottomOf="@+id/diagnosabtn" />
 
         <ImageButton
-            android:id="@+id/search"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginRight="24dp"
-            android:layout_marginBottom="24dp"
-            android:background="@drawable/datsicon"
-            android:fadingEdge="horizontal"
-            android:scaleType="centerInside"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/diagnosabtn"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <ImageButton
             android:id="@+id/help"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginStart="24dp"
             android:layout_marginLeft="24dp"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginRight="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             android:layout_marginBottom="24dp"
             android:background="@drawable/help"
             android:fadingEdge="horizontal"
             android:scaleType="centerInside"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/diagnosabtn"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -227,8 +185,8 @@
             android:layout_width="156dp"
             android:layout_height="151dp"
 
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="24dp"
             android:layout_marginRight="24dp"
@@ -239,9 +197,9 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/diagnosabtn"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.88" />
+            app:layout_constraintVertical_bias="0.872" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

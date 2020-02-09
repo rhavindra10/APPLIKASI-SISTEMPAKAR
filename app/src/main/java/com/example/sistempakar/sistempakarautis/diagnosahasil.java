@@ -38,7 +38,7 @@ Button btnmap;
         nama.setText("Nama :" + globalClass.getVar_nama());
         umur.setText("Umur :" + globalClass.getVar_umur());
         jk.setText("Jenis Kelamin :" + globalClass.getVar_jk());
-        txthsil.setText("DIAGNOSA : \n" + globalClass.getListdiagnosa() + "\n" );
+        txthsil.setText("DIAGNOSA : \n" + globalClass.getListdiagnosa()+"\n" );
         nmpenyakit.setText("Hasil Diagnosa menderita penyakit : \n"+ globalClass.getPenyakit1()+
                 "\n\n"+"Keterangan : \n" + globalClass.getKeterangan());
         nmpenyakit.setMovementMethod(new ScrollingMovementMethod());
@@ -81,7 +81,7 @@ Button btnmap;
         btnmap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/search?safe=strict&ei=vB45XayqFfjfz7sPx72IkAg&q=rumah+sakit+spesialis+anak+terdekat&oq=rumah+sakit+spesialis+anak+terdekat&gs_l=mobile-gws-serp.12...0.0.2.14.0.0.0.0.0.0.0.0..0.0....0...1c..64.mobile-gws-serp..0.0.0....0.fEvN6pU0gLs#istate=lrl:mlt"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/maps/search/poli+tumbuh+kembang/@-6.3797808,106.6958682,12z"));
                 startActivity(browserIntent);
             }
         });

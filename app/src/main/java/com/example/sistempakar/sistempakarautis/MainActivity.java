@@ -43,14 +43,14 @@ public class MainActivity extends AppCompatActivity {
 
 
 //search data
-        imageButton = (AppCompatImageButton) findViewById(R.id.search);
-        imageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                lokasituju = new Intent(MainActivity.this, datalist.class);
-                startActivity(lokasituju);
-            }
-        });
+//        imageButton = (AppCompatImageButton) findViewById(R.id.search);
+//        imageButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                lokasituju = new Intent(MainActivity.this, datalist.class);
+//                startActivity(lokasituju);
+//            }
+//        });
 //about
         imageButton = (AppCompatImageButton) findViewById(R.id.about);
         imageButton.setOnClickListener(new View.OnClickListener() {

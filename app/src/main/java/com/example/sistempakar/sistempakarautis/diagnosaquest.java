@@ -38,11 +38,7 @@ public class diagnosaquest extends AppCompatActivity {
         check5 = findViewById(R.id.checkBox5);
         check6 = findViewById(R.id.checkBox6);
         check7 = findViewById(R.id.checkBox7);
-        check8 = findViewById(R.id.checkBox8);
-        check9 = findViewById(R.id.checkBox9);
-        check10 = findViewById(R.id.checkBox10);
-        check11= findViewById(R.id.checkBox11);
-        check12 = findViewById(R.id.checkBox12);
+
 
         selection = new ArrayList<>();
 
@@ -55,44 +51,313 @@ public class diagnosaquest extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 final  GlobalClass globalClass = (GlobalClass) getApplicationContext();
-                if(check1.isChecked() && check2.isChecked() && check3.isChecked() && check4.isChecked() && check5.isChecked() && check6.isChecked() && check7.isChecked() && check8.isChecked() && check9.isChecked() && check10.isChecked() && check11.isChecked() && check12.isChecked()) {
+                //check1
+                String BukanASD = "Bukan ASD";
+                String PenjelasanBukanASD = "Bila tidak memenuhi kriteris 1(min 1) dan 2 (min2)  berarti dia bukan autis, bisa jadi cm satu gejala terjadi karena lingkungannya melakukan pembiaran (seperti ; main sendiri dengan gadget sehingga tidak memperdulikan sekitarnya atau jarang diketemukan dengan " +
+                        "orang lain /teman sebaya sehingga takut menatap mata orang lain/menangis di tempat ramai)";
 
-                    globalClass.setPenyakit1("ASD(autisme)");
-                    globalClass.setKeterangan ("Autistic Spectrum Disorder (ASD) adalah gangguan perkembangan saraf otak yang mempengaruhi kemampuan berinteraksi, berkomunikasi, serta kelakuan. \n\n " + "Penanganan : \n"+"-Ajak berkomunikasi dan berinteraksi dengan baik.\n" +
-                            "-Tumbuhkan minat.\n" +
-                            "-Jauhkan dari lingkungan yang bising.\n" +
-                            "-Pelihara hewan.");
-                }
-                else if(check1.isChecked() && check2.isChecked() && check3.isChecked() && check4.isChecked() && check5.isChecked() && check6.isChecked() && check7.isChecked() && check8.isChecked() && check9.isChecked() && check10.isChecked() && check11.isChecked() ) {
+                String positifASD = "Autism Spectrum Disorder (Autisme)";
+                String PenjelasanASD= "Autisme adalah gangguan perkembangan otak yang mempengaruhi kemampuan penderita dalam berkomunikasi dan berinteraksi dengan orang lain\n" +
+                        "Gejala individu autistik yang harus muncul (salah satu atau kesemuanya) adalah gangguan interaksi kualitatif, gangguan komunikasi yang tidak diusahakan diatasi dengan kemampuan komunikasi non-verbal, dan perilaku repetitif terbatas dengan pola minat, perilaku dan aktifitas berulang.\n" +
+                        "Kriteria Utama ASD (Autism Spectrum Disorder ) dalam DSM-5 (Diagnostic and Statistical Manual of Mental Disorders ) terdiri dari:\n" +
+                        "1.               Kriteria Spesifik : Defisit dalam komunikasi social / interaksi social yaitu,\n" +
+                        "a.       Defisit emosi social yang imbal balik, seperti rendahnya kemampuan untuk berbagi minat, rendahnya kemampuan untuk saling mempengaruhi, rendahnya / tidak ada inisiatif dalam berinteraksi.\n" +
+                        "b.       Defisit dalam perilaku komunikasi nonverbal yang ditunjukan dalam interaksi social, seperti ketidakmampuan melakukan kontak mata, kurangnya ekspresi wajah dan bahasa tubuh.\n" +
+                        "c.       Defisit dalam mengembangkan dan memelihara hubungan social serta berperilaku sesuai konteks social dan tingkat perkembangan, seperti rendahnya kemampuan bermain imajinatif, kurangnya minat dalam pertemanan, dan tidak menunjukan minat terhadap keberadaan orang lain.\n" +
+                        "2.            Kriteria Spesifik : Minat dan perilaku yang terbatas / Berulang-ulang, setidaknya ada 2 dari 4 kriteria berikut yang harus ditemukan baik dari kondisi terkini maupun dari riwayat perkembangan yaitu,\n" +
+                        "a.       Perilaku stereotip baik dengan mengulang-ulang kata, gerakan motoric atau caranya menggunakan benda.\n" +
+                        "b.      Rutinitas yang berlebihan, pola-pola perilaku yang ritual.\n" +
+                        "c.       Sangat terbatas, terpaku pada minat-minat tertentu.\n" +
+                        "d.      Reaksi yang hiper atau hipo terhadap input sensoris (tidak ada dalam DSM-IV).\n";
 
-                    globalClass.setPenyakit1("ASD (Autisme) ");
-                    globalClass.setKeterangan ("Autistic Spectrum Disorder (ASD) adalah gangguan perkembangan saraf otak yang mempengaruhi kemampuan berinteraksi, berkomunikasi, serta kelakuan. \n\n " + "Penanganan : \n"+"-Ajak berkomunikasi dan berinteraksi dengan baik.\n" +
-                            "-Tumbuhkan minat.\n" +
-                            "-Jauhkan dari lingkungan yang bising.\n" +
-                            "-Pelihara hewan.");
-                }
+
+
+                //FUNGSI UNTUK BUKAN ASD
+//                if(check1.isChecked()) {
 //
-                else if (check1.isChecked() && check2.isChecked() && check3.isChecked() && check4.isChecked() && check5.isChecked()) {
+//                    globalClass.setPenyakit1(BukanASD);
+//                    globalClass.setKeterangan (PenjelasanBukanASD);
+//                }
+//                else if(check2.isChecked()) {
+//
+//                    globalClass.setPenyakit1(BukanASD);
+//                    globalClass.setKeterangan (PenjelasanBukanASD);
+//                }
+//                else if(check3.isChecked()) {
+//
+//                    globalClass.setPenyakit1(BukanASD);
+//                    globalClass.setKeterangan (PenjelasanBukanASD);
+//                }
+//                else if(check4.isChecked()) {
+//
+//                    globalClass.setPenyakit1(BukanASD);
+//                    globalClass.setKeterangan (PenjelasanBukanASD);
+//                }
+//                else if(check5.isChecked()) {
+//
+//                    globalClass.setPenyakit1(BukanASD);
+//                    globalClass.setKeterangan (PenjelasanBukanASD);
+//                }
+//                else if(check6.isChecked()) {
+//
+//                    globalClass.setPenyakit1(BukanASD);
+//                    globalClass.setKeterangan (PenjelasanBukanASD);
+//                }
+//                else if(check7.isChecked() ) {
+//
+//                    globalClass.setPenyakit1(BukanASD);
+//                    globalClass.setKeterangan (PenjelasanBukanASD);
+//                }
+//check 1 sampai 7
 
-                    globalClass.setPenyakit1("Skizofrenia") ;
-                    globalClass.setKeterangan("Skizofrenia adalah gangguan mental yang menyebabkan penderita mengalami halusinasi, delusi, kekacauan berpikir (kebingungan), serta perubahan perilaku.");
+
+//FUNGSI POSITIF diagnosa autisme
+                   if(check1.isChecked() && check4.isChecked() && check5.isChecked()) {
+
+                    globalClass.setPenyakit1(positifASD);
+                    globalClass.setKeterangan(PenjelasanASD);
                 }
-                else if (check1.isChecked() && check7.isChecked() && check8.isChecked() && check9.isChecked()){
-                    globalClass.setPenyakit1("Asperger");
-                    globalClass.setKeterangan("Asperger adalah gangguan saraf otak yang mempengaruhi kemampuan berinteraksi dan berkomunikasi. Hampir sama dengan ASD dengan spektrum yang rendah.");
+                else if(check1.isChecked() && check4.isChecked() && check6.isChecked()) {
+
+                    globalClass.setPenyakit1(positifASD);
+                    globalClass.setKeterangan(PenjelasanASD);
                 }
-                else  if (check2.isChecked() && check10.isChecked() && check11.isChecked() ){
-                    globalClass.setPenyakit1("ADHD(pemusatan perhatian)");
-                    globalClass.setKeterangan("Attention Deficit Hyperactivity Disorder (ADHD) adalah kelainan yang membuat penderitanya kesulitan untuk memberikan perhatian dan fokus pada satu hal, umumnya akan diikuti aktifitas yang berlebihan.");
+                else if(check1.isChecked() && check4.isChecked() && check7.isChecked()) {
+
+                    globalClass.setPenyakit1(positifASD);
+                    globalClass.setKeterangan(PenjelasanASD);
                 }
-                else if (check7.isChecked() && check11.isChecked() && check12.isChecked()){
-                    globalClass.setPenyakit1("Keterbelakangan mental");
-                    globalClass.setKeterangan("Retardasi mental adalah kondisi sebelum usia 18 tahun yang ditandai dengan rendahnya kecerdasan (biasanya nilai IQ-nya di bawah 70) dan sulit beradaptasi dengan kehidupan sehari-hari.");
+                else if(check1.isChecked() && check5.isChecked() && check6.isChecked()) {
+
+                    globalClass.setPenyakit1(positifASD);
+                    globalClass.setKeterangan(PenjelasanASD);
                 }
+                else if(check1.isChecked() && check5.isChecked() && check7.isChecked()) {
+
+                    globalClass.setPenyakit1(positifASD);
+                    globalClass.setKeterangan(PenjelasanASD);
+                }
+                else if(check1.isChecked() && check6.isChecked() && check7.isChecked()) {
+
+                    globalClass.setPenyakit1(positifASD);
+                    globalClass.setKeterangan(PenjelasanASD);
+                }
+
+
+                   else if(check2.isChecked() && check4.isChecked() && check5.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check2.isChecked() && check4.isChecked() && check6.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check2.isChecked() && check4.isChecked() && check7.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check2.isChecked() && check5.isChecked() && check6.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check2.isChecked() && check5.isChecked() && check7.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check2.isChecked() && check6.isChecked() && check7.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+
+
+                   else if(check3.isChecked() && check4.isChecked() && check5.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check3.isChecked() && check4.isChecked() && check6.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check3.isChecked() && check4.isChecked() && check7.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check3.isChecked() && check5.isChecked() && check6.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check3.isChecked() && check5.isChecked() && check7.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check3.isChecked() && check6.isChecked() && check7.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+
+                   else if(check1.isChecked() && check2.isChecked() && check4.isChecked() && check5.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check1.isChecked() && check2.isChecked() && check4.isChecked() && check6.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check1.isChecked() && check2.isChecked() && check4.isChecked() && check7.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check1.isChecked() && check2.isChecked() && check5.isChecked() && check6.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check1.isChecked() && check2.isChecked() && check5.isChecked() && check7.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check1.isChecked() && check3.isChecked() && check4.isChecked() && check5.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check1.isChecked() && check3.isChecked() && check4.isChecked() && check6.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check1.isChecked() && check3.isChecked() && check4.isChecked() && check7.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check1.isChecked() && check4.isChecked() && check5.isChecked() && check6.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check1.isChecked() && check4.isChecked() && check5.isChecked() && check7.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check1.isChecked() && check5.isChecked() && check6.isChecked() && check7.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check2.isChecked() && check3.isChecked() && check4.isChecked() && check5.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check2.isChecked() && check3.isChecked() && check4.isChecked() && check6.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check2.isChecked() && check3.isChecked() && check4.isChecked() && check7.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check2.isChecked() && check4.isChecked() && check5.isChecked() && check6.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check2.isChecked() && check4.isChecked() && check5.isChecked() && check7.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check2.isChecked() && check5.isChecked() && check6.isChecked() && check7.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check3.isChecked() && check4.isChecked() && check5.isChecked() && check6.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check3.isChecked() && check4.isChecked() && check5.isChecked() && check7.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check1.isChecked() && check2.isChecked() && check3.isChecked() && check4.isChecked() && check5.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check1.isChecked() && check2.isChecked() && check3.isChecked() && check4.isChecked() && check6.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check1.isChecked() && check2.isChecked() && check3.isChecked() && check4.isChecked() && check7.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check1.isChecked() && check3.isChecked() && check4.isChecked() && check5.isChecked() && check6.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check1.isChecked() && check3.isChecked() && check5.isChecked() && check5.isChecked() && check7.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check1.isChecked() && check4.isChecked() && check5.isChecked() && check6.isChecked() && check7.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check2.isChecked() && check3.isChecked() && check4.isChecked() && check5.isChecked() && check6.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check2.isChecked() && check3.isChecked() && check5.isChecked() && check5.isChecked() && check7.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+                   else if(check3.isChecked() && check4.isChecked() && check5.isChecked() && check6.isChecked() && check7.isChecked()) {
+
+                       globalClass.setPenyakit1(positifASD);
+                       globalClass.setKeterangan(PenjelasanASD);
+                   }
+
+
+
                 else {
-                    globalClass.setPenyakit1("ASD gejala ringan");
-                    globalClass.setKeterangan("Autistic Spectrum Disorder (ASD) adalah gangguan perkembangan saraf otak yang mempengaruhi kemampuan berinteraksi, berkomunikasi, serta kelakuan.");
+                     globalClass.setPenyakit1(BukanASD);
+                     globalClass.setKeterangan (PenjelasanBukanASD);
                 }
+
+
+
+
                 // mengambil variabel dari checbox yang di pilih
                 String hasil = "";
                 for (String selections: selection)
@@ -101,20 +366,21 @@ public class diagnosaquest extends AppCompatActivity {
                 }
                 globalClass.setListdiagnosa(hasil);
                 // pindah halaman
-                if (total > 3){
+                if (total == 0){
+                    Toast.makeText(getApplicationContext(), "tidak ada checkbox yg dipilih  ", Toast.LENGTH_LONG).show();
+//                    globalClass.setPenyakit1("ASD gejala ringan");
+//                    globalClass.setKeterangan("hanya gejala biasa");
+//                    Intent intent = new Intent( diagnosaquest.this, diagnosahasil.class);
 
-                Intent intent = new Intent( diagnosaquest.this, diagnosahasil.class);
-    
-                startActivity(intent);
-                finish(); }
+//                    startActivity(intent);
+//                    finish();
+
+                 }
                 else{
-//                    Toast.makeText(getApplicationContext(), "checkbox yg dipilih  harus lebih dari 3  ", Toast.LENGTH_LONG).show();
-                    globalClass.setPenyakit1("ASD gejala ringan");
-                    globalClass.setKeterangan("hanya gejala biasa");
                     Intent intent = new Intent( diagnosaquest.this, diagnosahasil.class);
 
-                    startActivity(intent);
-                    finish();
+               startActivity(intent);
+              finish();
                 }
 
 
@@ -126,6 +392,8 @@ public class diagnosaquest extends AppCompatActivity {
         });
 
     }
+
+
     public void selectitem(View view)
     {
 
@@ -136,102 +404,63 @@ public class diagnosaquest extends AppCompatActivity {
                     case R.id.checkBox1:
                         if (checked)
 
-                        {selection.add( "\n" +" * " + check1.getText().toString());
+                        {selection.add( "\n" +" * " + check1.getText().toString() + " ya");
                         total = total + 1;
                         }
                         else
-                        {selection.remove( "\n" +" * " + check1.getText().toString());
+                        {selection.remove( "\n" +" * " + check1.getText().toString()+ " ya");
                             total = total - 1;
                            }
                         break;
                     case R.id.checkBox2:
                         if (checked)
-                        {selection.add( "\n" +" * " + check2.getText().toString());
+                        {selection.add( "\n" +" * " + check2.getText().toString()+ " ya");
                             total = total + 1;
                         }
                         else
-                        {selection.remove( "\n" +" * " + check2.getText().toString());  total = total - 1;}
+                        {selection.remove( "\n" +" * " + check2.getText().toString()+ " ya");  total = total - 1;}
                         break;
                     case R.id.checkBox3:
                         if (checked)
-                        {selection.add( "\n" +" * " + check3.getText().toString());
+                        {selection.add( "\n" +" * " + check3.getText().toString()+ " ya");
                             total = total + 1;}
                         else
-                        {selection.remove( "\n" +" * " +check3.getText().toString());
+                        {selection.remove( "\n" +" * " +check3.getText().toString()+ " ya");
                         total = total - 1 ;}
                         break;
                     case R.id.checkBox4:
                         if (checked)
-                        {selection.add( "\n" +" * " + check4.getText().toString());
+                        {selection.add( "\n" +" * " + check4.getText().toString()+ " iya");
                             total = total + 1;}
                         else
-                        {selection.remove( "\n" +" * " + check4.getText().toString());
+                        {selection.remove( "\n" +" * " + check4.getText().toString()+ " iya");
                             total = total - 1;}
                         break;
                     case R.id.checkBox5:
                         if (checked)
-                        {selection.add( "\n" +" * " + check5.getText().toString());
+                        {selection.add( "\n" +" * " + check5.getText().toString()+ " iya");
                             total = total + 1;}
                         else
-                        {selection.remove( "\n" +" * " + check5.getText().toString());
+                        {selection.remove( "\n" +" * " + check5.getText().toString()+ " iya");
                             total = total - 1;}
                         break;
                     case R.id.checkBox6:
                         if (checked)
-                        {selection.add( "\n" +" * " +check6.getText().toString());
+                        {selection.add( "\n" +" * " +check6.getText().toString()+ " iya");
                             total = total + 1;}
                         else
-                        {selection.remove( "\n" +" * " +check6.getText().toString());
+                        {selection.remove( "\n" +" * " +check6.getText().toString()+ " iya");
                         total = total - 1;}
                         break;
                     case R.id.checkBox7:
                         if (checked)
-                        {selection.add( "\n" +" * " +check7.getText().toString());
+                        {selection.add( "\n" +" * " +check7.getText().toString()+ " iya");
                             total = total + 1;}
                         else
-                        {selection.remove( "\n" +" * " +check7.getText().toString());
+                        {selection.remove( "\n" +" * " +check7.getText().toString()+ " iya");
                             total = total - 1;}
                         break;
-                    case R.id.checkBox8:
-                        if (checked)
-                        {selection.add( "\n" +" * " +check8.getText().toString());
-                            total = total + 1;}
-                        else
-                        {selection.remove( "\n" +" * " +check8.getText().toString());
-                            total = total - 1;}
-                        break;
-                    case R.id.checkBox9:
-                        if (checked)
-                        {selection.add( "\n" +" * " +check9.getText().toString());
-                            total = total + 1;}
-                        else
-                        {selection.remove( "\n" +" * " +check9.getText().toString());
-                            total = total - 1;}
-                        break;
-                    case R.id.checkBox10:
-                        if (checked)
-                        {selection.add( "\n" +" * " +check7.getText().toString());
-                            total = total + 1;}
-                        else
-                        {selection.remove( "\n" +" * " +check7.getText().toString());
-                            total = total - 1;}
-                        break;
-                    case R.id.checkBox11:
-                        if (checked)
-                        {selection.add( "\n" +" * " +check8.getText().toString());
-                            total = total + 1;}
-                        else
-                        {selection.remove( "\n" +" * " +check8.getText().toString());
-                            total = total - 1;}
-                        break;
-                    case R.id.checkBox12:
-                        if (checked)
-                        {selection.add( "\n" +" * " +check9.getText().toString());
-                            total = total + 1;}
-                        else
-                        {selection.remove( "\n" +" * " +check9.getText().toString());
-                            total = total - 1;}
-                        break;
+
                 }
 
 

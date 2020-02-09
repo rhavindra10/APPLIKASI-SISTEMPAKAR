@@ -5,8 +5,7 @@
         maka akan masuk kedalam form seleksi dari gejala - gejala setiap penyakit yg diderta.
       </string>
     <string name="datalist"> Pada menu Informasi terdapat informasi mengenai penyakit serta keterangan dari penyakit tersebut </string>
-    <string name="tentang1"> Pakar deteksi dini autisme adalah aplikasi yang
-dapat membantu untuk menentukan penyakit dan solusi sesuai gejala gejala yang ada</string>
+    <string name="tentang1"> Sistem Pakar Deteksi Dini Autisme adalah aplikasi yang dapat membantu dalam mendeteksi Autisme sejak dini sesuai gejela-gejala yang ada</string>
 
 
     <string name="ASDautsime">"Autistic Spectrum Disorder (ASD) adalah gangguan perkembangan saraf otak yang mempengaruhi kemampuan berinteraksi, berkomunikasi, serta kelakuan. \n\n "  "Penanganan : \n" "-Ajak berkomunikasi dan berinteraksi dengan baik.\n"

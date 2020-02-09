@@ -65,7 +65,10 @@
                 android:gravity="left"
                 android:onClick="selectitem"
                 android:padding="1dp"
-                android:text="Apakah ada kesulitan untuk mengungkapkan atau mengerti perasaan ?"
+                android:text="Defisit emosi sosial yang imbal balik, seperti rendahnya
+kemampuan untuk berbagi minat, rendahnya kemampuan untuk
+saling mempengaruhi, rendahnya / tidak ada inisiatif dalam
+berinteraksi. "
                 android:textSize="16sp" />
 
             <CheckBox
@@ -78,7 +81,7 @@
                 android:background="#ABF5F1F1"
                 android:gravity="left"
                 android:onClick="selectitem"
-                android:text="Apakah ada kesulitan untuk fokus dan menyadari keadaan sekitarnya atau terlalu fokus pada hal yang dilakukannya?"
+                android:text="Defisit dalam perilaku komunikasi nonverbal yang ditunjukan dalam interaksi sosial, seperti ketidakmampuan melakukan kontak mata, kurangnya ekspresi wajah dan bahasa tubuh."
                 android:textSize="16sp" />
 
             <CheckBox
@@ -92,7 +95,7 @@
                 android:gravity="left"
                 android:onClick="selectitem"
                 android:padding="1dp"
-                android:text="Apakah ada kesulitan seperti tidak merespon saat ditegur maupun dipanggil?"
+                android:text="Defisit dalam mengembangkan dan memelihara hubungan social serta berperilaku sesuai konteks sosial dan tingkat perkembangan, seperti rendahnya kemampuan bermain imajinatif, kurangnya minat dalam pertemanan, dan tidak menunjukan minat terhadap keberadaan orang lain."
                 android:textSize="16sp" />
 
             <CheckBox
@@ -106,7 +109,7 @@
                 android:gravity="left"
                 android:onClick="selectitem"
                 android:padding="1dp"
-                android:text="Apakah ada kegiatan yang sering dilakukannya dengan tingkat intensitas yang tinggi?"
+                android:text="Perilaku stereotip baik dengan mengulang-ulang kata, gerakan motoric atau caranya menggunakan benda."
                 android:textSize="16sp" />
 
             <CheckBox
@@ -120,7 +123,7 @@
                 android:gravity="left"
                 android:onClick="selectitem"
                 android:padding="1dp"
-                android:text="Apakah ada kesulitan dalam hal menumbuhkan minat atau keinginan? "
+                android:text="Rutinitas yang berlebihan, pola-pola perilaku yang ritual. "
                 android:textSize="16sp" />
 
             <CheckBox
@@ -134,7 +137,7 @@
                 android:gravity="left"
                 android:onClick="selectitem"
                 android:padding="1dp"
-                android:text="Apakah ada perkataan yang sering diucapkan berulang kali?"
+                android:text="Sangat terbatas, terpaku pada minat-minat tertentu."
                 android:textSize="16sp" />
 
             <CheckBox
@@ -148,77 +151,7 @@
                 android:gravity="left"
                 android:onClick="selectitem"
                 android:padding="1dp"
-                android:text="Apakah ada kesulitan memberikan informasi dengan apa yang dirasa atau apa yang sedang dia inginkan?"
-                android:textSize="16sp" />
-
-            <CheckBox
-                android:id="@+id/checkBox8"
-                android:layout_width="match_parent"
-                android:layout_height="80sp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="#ABF5F1F1"
-                android:gravity="left"
-                android:onClick="selectitem"
-                android:padding="1dp"
-                android:text="Apakah ada kebiasaan sehari-hari yang selalu dilakukan jika tidak dilakukan akan merubah tingkahya menjadi agresif? "
-                android:textSize="16sp" />
-
-            <CheckBox
-                android:id="@+id/checkBox9"
-                android:layout_width="wrap_content"
-                android:layout_height="80sp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="#ABF5F1F1"
-                android:gravity="left"
-                android:onClick="selectitem"
-                android:padding="1dp"
-                android:text="Apakah ada indranya (pendengaran, penglihatan, penciuman, pengecap, dan peraba) yang lebih sensitif? "
-                android:textSize="16sp" />
-
-            <CheckBox
-                android:id="@+id/checkBox10"
-                android:layout_width="match_parent"
-                android:layout_height="80sp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="#ABF5F1F1"
-                android:gravity="left"
-                android:onClick="selectitem"
-                android:padding="1dp"
-                android:text="Apakah ada kegiatan yang berlebihan hingga menarik perhatian serta mengganggu orang terdekat? "
-                android:textSize="16sp" />
-
-            <CheckBox
-                android:id="@+id/checkBox11"
-                android:layout_width="match_parent"
-                android:layout_height="80sp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="#ABF5F1F1"
-                android:gravity="left"
-                android:onClick="selectitem"
-                android:padding="1dp"
-                android:text="Apakah ada kesulitan konsentrasi saat mempelajari sesuatu contohnya mengucap atau berjalan ?"
-                android:textSize="16sp" />
-
-            <CheckBox
-                android:id="@+id/checkBox12"
-                android:layout_width="match_parent"
-                android:layout_height="80sp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:background="#ABF5F1F1"
-                android:gravity="left"
-                android:onClick="selectitem"
-                android:padding="1dp"
-                android:text="Apakah sering ada sikap agresif pada sesuatu yang tidak dia suka? "
+                android:text="Reaksi yang hiper atau hipo terhadap input sensoris"
                 android:textSize="16sp" />
 
             <Button
